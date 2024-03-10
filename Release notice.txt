@@ -1,0 +1,29 @@
+Release notice:
+---------------
+
+Package version:    v.0.1 ALPHA
+
+Package type:       .html
+
+Package Encoding:   UTF-8
+
+Package release:    Stable
+
+Package status:     N/A 
+
+Package proxy:      U/A
+
+Package provider:   The cdpeGround, a subsiadry allience of The Beta Testing Studios.pvt.ltd
+
+Package code-   :   HTML 5.0, CSS 3
+composition
+
+Package use-case:   Windows 11 Home
+
+Package updates:    Regular security patches and proper bug fixes
+
+Package release- :  14 / 10 / 2023
+date
+
+Package compiler:   Visual Studio code
+

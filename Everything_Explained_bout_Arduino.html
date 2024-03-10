@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html>
+    <html lang = "eng"></html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="arduino" content="True">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <title>Everything Explained about Arduino</title>
+        <link rel = "stylesheet" href = "style.css>">
+
+        <div id = "styling">
+            <style>
+
+            h1 {
+                color: orangered;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 300%;
+              }
+
+              h2 {
+                 color: orange;
+                 font-family: Arial, Helvetica, sans-serif;
+                 font-size: 100%;
+              }
+
+              h3 {
+                 color: grey;
+                 font-family: Arial, Helvetica, sans-serif;
+                 font-size: 100%;
+              }
+
+              h3 {
+                 color: black;
+                 font-family: Arial, Helvetica, sans-serif;
+                 font-size: 100%;
+              }
+
+              p {
+                 color: green;
+                 font-family: Arial, Helvetica, sans-serif;
+                 font-size: 100%;
+              }
+
+            </style>
+        </div>
+
+    </head>
+    </html>
+</html>
+    <body>
+        
+        <div id = "User Interface">
+
+        <font face = "Arial">
+        <p style = "font-size: 20px">
+        <p style = "color: #FF7A59">
+
+        <div>
+        <center><strong><h1>Everything Explained about Arduino</strong></h1></center>
+
+        <center>
+        <style> 
+        .horizontal_line { 
+            background-color: darkgrey; 
+            width: 90%; 
+            height: 5px; 
+            border-top: 5px dotted grey; 
+            line-height: 80%; 
+        } 
+  
+        .line { 
+            border-bottom: 5px solid black; 
+            margin-top: 5px; 
+            width: 90%; 
+        } 
+    </style>
+
+        <div class="horizontal_line"></div> 
+        <div class="line"></div> 
+        </div><br>
+
+    </center>
+
+        <div id = "note">
+            <h2>Note:</h2>
+
+            <h3>
+                Most of the information obtained in this web page is sourced from W3Schools and wikipedia, most of the credits
+                goes to Arduino and wikipedia respectivley.
+            </h3>
+
+        </div><br>
+        <hr>
+
+        <div id = "introduction">
+            <h2>Introduction:</h2><br>
+
+            <h3>
+                Arduino is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board 
+                microcontrollers and microcontroller kits for building digital devices. Its hardware products are licensed under a CC BY-SA license, while 
+                the software is licensed under the GNU Lesser General Public License (LGPL) or the GNU General Public License (GPL), permitting the 
+                manufacture of Arduino boards and software distribution by anyone. Arduino boards are available commercially from the official website 
+                or through authorized distributors.<br><br>
+
+                Arduino board designs use a variety of microprocessors and controllers. The boards are equipped with sets of digital and analog input/output 
+                (I/O) pins that may be interfaced to various expansion boards ('shields') or breadboards (for prototyping) and other circuits. The boards 
+                feature serial communications interfaces, including Universal Serial Bus (USB) on some models, which are also used for loading programs. 
+                The microcontrollers can be programmed using the C and C++ programming languages(Embedded C), using a standard API which is also known as 
+                the Arduino Programming Language, inspired by the Processing language and used with a modified version of the Processing IDE. In addition 
+                to using traditional compiler toolchains, the Arduino project provides an integrated development environment (IDE) and a command line tool 
+                developed in Go.<br><br>
+            </h3>
+
+        </div><br>
+        <hr>
+
+        <div id = "advantages">
+
+            <h2>What are the advantages of Arduino:</h2><br>
+
+            <h3>
+                The Arduino project began in 2005 as a tool for students at the Interaction Design Institute Ivrea, Italy, aiming to provide a low-cost and
+                easy way for novices and professionals to create devices that interact with their environment using sensors and actuators.
+                
+                Common examples of such devices intended for beginner hobbyists include simple robots, thermostats, and motion detectors.
+
+                The name Arduino comes from a bar in Ivrea, Italy, where some of the project's founders used to meet. The bar was named after Arduin of Ivrea, 
+                who was the margrave of the March of Ivrea and King of Italy from 1002 to 1014.
+            </h3><br>
+
+        </div><br>
+        <hr>
+
+        <div id = "syntax">
+
+            <h2>The syntax of Arduino:</h2><br>
+
+            <h3>The sytax of Aduino is easy to understant and is also not that hard to learn it. The languages used in Arduino are usualy C and C++.
+                The below is a great example of how an Arduino sytax looks like.
+            </h3>
+
+            <p>
+
+                #include < LedControl.h> <br><br>
+
+                    const int numDisplays = 1;<br>
+                    LedControl ledControl = LedControl(10, 8, 9, numDisplays);<br><br>
+                    
+                    void setup() {<br>
+                      ledControler.shutdown(0, false);<br>
+                      ledControler.setIntensity(0, 1);<br><br>
+                    
+                      Serial.begin(9600);<br>
+                    }<br><br>
+                    
+                    void loop() {<br>
+                      for (int 1 = 0; i < 2; i ++) {<br>
+                        for (int y = 0; y < 8; y ++){<br>
+                          for (int x = 0; x < 8; x ++){<br>
+                            bool ledState = (x + y) % 2 == i;<br>
+                            ledControler.setLed(0, x, y, ledState);<br>
+                          }<br>
+                        }<br>
+                        delay(500);<br>
+                      }<br>
+                    }<br><br>
+
+            <p>
+
+        </div><br>
+        <hr>
+
+            <div id = "history">
+
+                <h2>The history of Arduino:</h2><br>
+
+                <h3>
+                    The Arduino project was started at the Interaction Design Institute Ivrea (IDII) in Ivrea, Italy. At that time, the students used a BASIC 
+                    Stamp microcontroller at a cost of $50. In 2003 Hernando Barragán created the development platform Wiring as a Master's thesis project at IDII, 
+                    under the supervision of Massimo Banzi and Casey Reas. 
+                    
+                    Casey Reas is known for co-creating, with Ben Fry, the Processing development platform. 
+                    The project goal was to create simple, low cost tools for creating digital projects by non-engineers. The Wiring platform consisted of a printed 
+                    circuit board (PCB) with an ATmega128 microcontroller, an IDE based on Processing and library functions to easily program the microcontroller. 
+
+                    In 2005, Massimo Banzi, with David Mellis, another IDII student, and David Cuartielles, extended Wiring by adding support for the cheaper ATmega8 \
+                    microcontroller. The new project, forked from Wiring, was called Arduino.
+                </h3><br><br>
+
+                <h3>
+                    The initial Arduino core team consisted of Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino, and David Mellis.
+                    Following the completion of the platform, lighter and less expensive versions were distributed in the open-source community. It was estimated in 
+                    mid-2011 that over 300,000 official Arduinos had been commercially produced, and in 2013 that 700,000 official boards were in users' hands
+                </h3><br><br>
+
+                <h3>
+                    In early 2008, the five co-founders of the Arduino project created a company, Arduino LLC, to hold the trademarks associated with Arduino. 
+                    The manufacture and sale of the boards were to be done by external companies, and Arduino LLC would get a royalty from them. The founding bylaws 
+                    of Arduino LLC specified that each of the five founders transfer ownership of the Arduino brand to the newly formed company
+                </h3><br><br>
+
+                <h3>
+                    At the end of 2008, Gianluca Martino's company, Smart Projects, registered the Arduino trademark in Italy and kept this a secret from the other 
+                    co-founders for about two years. This was revealed when the Arduino company tried to register the trademark in other areas of the world (they 
+                    originally registered only in the US), and discovered that it was already registered in Italy. 
+                    
+                    Negotiations with Martino and his firm to bring 
+                    the trademark under the control of the original Arduino company failed. In 2014, Smart Projects began refusing to pay royalties. They then appointed 
+                    a new CEO, Federico Musto, who renamed the company Arduino SRL and created the website arduino.org, copying the graphics and layout of the original 
+                    arduino.cc. This resulted in a rift in the Arduino development team. In January 2015, Arduino LLC filed a lawsuit against Arduino SRL.
+                </h3><br><br>
+
+            </div><br>
+            <hr>
+
+        </div>
+
+        <div id = "Link_to_page">
+            <h3>Still don't understand anything? Then just hop in to the main webpage of wikipedia!</h3>
+            <a href="https://en.wikipedia.org/wiki/Arduino">Click me!</a>
+            <h3>Or, go to Arduino for the sources and etc!</h3>
+            <a href="https://www.arduino.cc/en/Guide/Introduction">Click me!</a>
+        </div><br>
+            <hr>
+
+        <div id = "LICENSE">
+            <h2>Our licence:</h2>
+            <h3>
+                Copyright (c) 2023 the codeGround, A subsidary allaience of 
+                The Beta Testing Studios.pvt.ltd. The licence is given below:
+            </h3>
+
+<h4>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+</h4><br>
+
+<h4>
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+</h4><br>
+
+<h4>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</h4><br>
+<hr>
+
+<center><strong><h2>Thankyou and have a great day!</strong></h2></center><br>
+
+        </div>
+
+        </p>
+        </p>
+        </font>
+
+        </div>
+        <div id = "grammerly">
+        <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+          <style>
+            div.grammarly-desktop-integration {
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              padding: 0;
+              margin: -1px;
+              overflow: hidden;
+              clip: rect(0, 0, 0, 0);
+              white-space: nowrap;
+              border: 0;
+              -moz-user-select: none;
+              -webkit-user-select: none;
+              -ms-user-select:none;
+              user-select:none;
+            }
+      
+            div.grammarly-desktop-integration:before {
+              content: attr(data-content);
+            }
+          </style>
+          </div>
+
+          <div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" 
+          data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}">
+        </div>
+
+        <script src = "main.js"></script>
+
+    </body>
+</html>
